@@ -282,7 +282,7 @@ let a15 = [
 
 function f15() {
     let out = '';
-    let a = a15[0];
+    let a = a15[0].length;
     for (let i = 0; i < a15.length; i++) {
         if (a15[i].length > a) {
             a = a15[i].length;
