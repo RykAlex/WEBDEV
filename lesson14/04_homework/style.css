@@ -1,0 +1,30 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+.out {
+    margin: auto;
+    width: 200px;
+    min-height: 250px;
+    background-color: aqua;
+    border-radius: 10px;
+    
+     
+}
+
+.temperature-title,
+.temperature,.windspeed-title,
+.windspeed {
+	width: 200px;
+    padding-top: 10px;
+	height: 20px;
+    text-align: center;
+	
+}
+
+img {
+    display: block;
+    margin: 0 auto;   
+}
