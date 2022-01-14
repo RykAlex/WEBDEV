@@ -9,7 +9,7 @@ function f1() {
         "five": 20
     };
     document.querySelector('.out-1').innerHTML = a1.two;
-    return two;
+    return a1.two;
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -49,7 +49,13 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
-    return a3.odd;
+    let out = '';
+    for (let key in a3) {
+        if ("hi" == a3[key]) {
+            out += a3[key] + ' ';
+        }
+    }
+    return out;
 }
 
 document.querySelector('.b-3').onclick = () => {
@@ -73,7 +79,7 @@ let a4 = {
 function f4() {
     let out = '';
     for (let key in a4) {
-        out += a4[key] + ' ' + ' <br>';
+        out += key + ' ' + a4[key] + ' ' + ' <br>';
     }
     return out;
 }
